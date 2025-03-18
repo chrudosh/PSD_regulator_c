@@ -23,6 +23,6 @@ struct pid_data {
 // Function prototypes
 void regulator_defaults(struct pid_data *pid_regulator);
 float regulate(float input, struct pid_data *pid_regulator);
-float example_system(float in);
+
 
 #endif // PSD_REGULATOR_H
