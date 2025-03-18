@@ -1,6 +1,13 @@
 #include <stdio.h>
 #include "psd_regulator.h"
 
+// system has integrating behaviour so only P is needed
+float example_system(float in) {
+    static float a = 0;
+    a += in * 0.01;
+    return a;
+}
+
 int main() {
     // create regulator instance
     struct pid_data regulator1;
