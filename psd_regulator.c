@@ -41,9 +41,4 @@ float regulate(float input, struct pid_data *pid_regulator) {
     return output;
 }
 
-// system has integrating behaviour so only P is needed
-float example_system(float in) {
-    static float a = 0;
-    a += in * 0.01;
-    return a;
-}
+
