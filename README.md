@@ -27,7 +27,7 @@ regulator1.ki = 0.5;
 regulator1.kd = 0.1;
 
 // setting the maximum and minimum output value
-regulator1.max effort = 255
+regulator1.max_effort = 255;
 regulator1.min_effort = -255;
 ```
 Function **regulate** calculates the output of the regulator
